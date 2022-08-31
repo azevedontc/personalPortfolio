@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background: url("../img/bg.jpg") no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  color: #141111;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.profile {
+  max-width: 452px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.box {
+  background: #eee;
+  padding: 4rem;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 0 auto 2rem auto;
+}
+
+.profile span {
+  font-size: 24px;
+}
+
+.profile p {
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.redes-sociais {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.redes-sociais li {
+  margin-right: 1rem;
+}
+
+.portfolio {
+  max-width: 886px;
+  box-sizing: border-box;
+}
+
+.portfolio ul {
+  margin-top: 3rem;
+}
+
+.portfolio li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 1rem;
+  color: #606060;
+}
+
+.portfolio li + li {
+  margin-top: 2rem;
+}
+
+.portfolio img {
+  border-radius: 10px;
+}
+
+.portfolio h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 16px black;
+  margin-top: 50vh;
+  padding-bottom: 50vh;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-attachment: initial;
+    background-size: contain;
+    background-color: #f0e6da;
+  }
+  .box {
+    padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 30px;
+  }
+  .box:first-child {
+    padding: 3rem;
+  }
+  .portfolio ul {
+    margin-top: 1rem;
+  }
+  .portfolio li {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .portfolio li div {
+    max-width: 448px;
+  }
+  .copyright {
+    font-size: 18px;
+    color: #606060;
+    text-shadow: none;
+    margin: 0;
+    padding: 4rem 0;
+  }
+}
