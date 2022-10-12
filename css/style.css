@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
 * {
+  font-family: 'Marcellus SC', serif;
   margin: 0;
   padding: 0;
 }
@@ -13,8 +16,7 @@ li {
 }
 
 body {
-  font-family: "Source Code Pro", monospace;
-  background: url("../img/bg.jpg") no-repeat top center;
+  background: url("../images/bg.jpg") no-repeat top center;
   background-attachment: fixed;
   background-size: cover;
   display: grid;
@@ -34,9 +36,13 @@ body {
 }
 
 .profile {
-  max-width: 452px;
+  max-width: 415px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.profile h1{
+  color: #062e52;
 }
 
 .box {
@@ -45,12 +51,13 @@ body {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
   border-radius: 50px;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 1.5rem;
 }
 
 .profile-pic {
   border-radius: 50%;
   margin: 0 auto 2rem auto;
+  box-shadow: 2px 2px 16px #062e52;
 }
 
 .profile span {
@@ -78,6 +85,14 @@ body {
   box-sizing: border-box;
 }
 
+.portfolio h1{
+  color: #062e52;
+}
+
+.portfolio h2{
+  color: #062e52;
+}
+
 .portfolio ul {
   margin-top: 3rem;
 }
@@ -103,13 +118,44 @@ body {
   margin-bottom: 1rem;
 }
 
+.gl img{
+  width: 32px;
+  float: left;
+  border-radius: 10px;
+  padding-right: 8px;
+}
+
+.wd img{
+  width: 32px;
+  float: left;
+  border-radius: 10px;
+  padding-right: 8px;
+}
+
+.gd img{
+  width: 32px;
+  float: left;
+  border-radius: 10px;
+  padding-right: 8px;
+}
+
 .copyright {
   font-size: 24px;
   color: white;
   text-shadow: 2px 2px 16px black;
-  margin-top: 50vh;
-  padding-bottom: 50vh;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
+}
+
+.images_gd img{
+  width: 55%;
+  display: block;
+  margin: 0px auto;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 16px #062e52;
 }
 
 @media (max-width: 600px) {
@@ -139,7 +185,7 @@ body {
   .copyright {
     font-size: 18px;
     color: #606060;
-    text-shadow: none;
+    text-shadow: #062e52;
     margin: 0;
     padding: 4rem 0;
   }
