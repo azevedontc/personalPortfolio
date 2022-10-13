@@ -160,10 +160,9 @@ body {
 
 @media (max-width: 600px) {
   body {
-    background: url("../images/bg_vertical.jpg") no-repeat top center;
+    background: rgb(0,79,149);
+    background: linear-gradient(90deg, rgba(0,79,149,1) 0%, rgba(6,46,82,1) 100%);
     background-attachment: initial;
-    background-size: contain;
-    background-color: #f0e6da;
   }
   .box {
     padding: 2rem;
@@ -185,7 +184,7 @@ body {
   }
   .copyright {
     font-size: 18px;
-    color: #606060;
+    color: white;
     text-shadow: #062e52;
     margin: 0;
     padding: 4rem 0;
