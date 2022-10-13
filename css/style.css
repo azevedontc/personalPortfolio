@@ -142,7 +142,7 @@ body {
 .copyright {
   font-size: 24px;
   color: white;
-  text-shadow: 2px 2px 16px black;
+  text-shadow: #062e52;
   margin-top: 10rem;
   padding-bottom: 10rem;
   text-align: center;
@@ -160,6 +160,7 @@ body {
 
 @media (max-width: 600px) {
   body {
+    background: url("../images/bg_vertical.jpg") no-repeat top center;
     background-attachment: initial;
     background-size: contain;
     background-color: #f0e6da;
